@@ -1,4 +1,43 @@
-<ul class="card-wrapper">
+<div>
+  {{bucketItem | json}}
+</div>
+<div>
+  <div (click)="onItemDetailsClick('New')">New</div>
+  <!-- <svg width="400" height="110">
+    <rect width="150" height="70" style="fill:rgba(224, 224, 222, 0.812);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg> -->
+</div>
+<!-- <div>
+  <div>New</div>
+  <svg width="400" height="110">
+    <rect width="150" height="70" style="fill:rgba(224, 224, 222, 0.812);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg>
+</div>-->
+<div> 
+  <div (click)="onItemDetailsClick('Ready')">Ready</div>
+  <!-- <svg width="400" height="110">
+    <rect width="150" height="70" style="fill:rgba(224, 224, 222, 0.812);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg> -->
+</div>
+<div>
+  <div (click)="onItemDetailsClick('Running')">Running</div>
+  <!-- <svg width="400" height="110">
+    <rect width="150" height="70" style="fill:rgba(224, 224, 222, 0.812);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg> -->
+</div>
+<div>
+  <div (click)="onItemDetailsClick('Wait')">Wait</div>
+  <!-- <svg width="400" height="110">
+    <rect width="150" height="70" style="fill:rgba(224, 224, 222, 0.812);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg> -->
+</div>
+<div>
+  <div (click)="onItemDetailsClick('Completed')">Completed</div>
+  <!-- <svg width="400" height="110">
+    <rect width="150" height="70" style="fill:rgba(224, 224, 222, 0.812);stroke-width:3;stroke:rgb(0,0,0)" />
+  </svg> -->
+</div>
+<!-- <ul class="card-wrapper">
     <li class="card">
       <img src='https://images.unsplash.com/photo-1611916656173-875e4277bea6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
       <h3><a href="">A Super Wonderful Headline</a></h3>
@@ -14,4 +53,8 @@
       <h3><a href="">Positively Terrific Title</a></h3>
       <p>Lorem ipsum sit dolor amit</p>
     </li>
-  </ul>
+  </ul> -->
+
+  <div>
+    <app-step-details [stepTitle]="title"></app-step-details>
+  </div>
